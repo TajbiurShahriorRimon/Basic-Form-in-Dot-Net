@@ -1,0 +1,18 @@
+﻿@model MidAssignment1.Models.User
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+    <h1>hello</h1>
+    @*<img src="~/Views/Image/@Model.PicturePath" height="200" width="300">*@
+    @*<img src="@Url.Content(@Model.PicturePath)" height="300" width="500"/>*@
+    
+    <img src="~/Views/Image/@Model.PicturePath" height="200" width="300">
+    @*<img src="@Url.Content(Model.PicturePath)" height="400" width="400">*@
+</div>
+</body>
+</html>

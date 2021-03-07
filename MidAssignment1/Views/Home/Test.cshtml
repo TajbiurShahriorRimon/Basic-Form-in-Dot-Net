@@ -1,0 +1,46 @@
+﻿@using System.Web.UI.WebControls
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+    <table>
+        <tr>
+            <td>Name: @Model.Name</td>
+        </tr>
+        <tr>
+            <td>User Name: @Model.UserName</td>
+        </tr>
+        <tr>
+            <td>DOB: @Model.Dob</td>
+        </tr>
+        <tr>
+            <td>Gender: @Model.Gender</td>
+        </tr>
+        <tr>
+            <td>Password: @Model.Password</td>
+        </tr>
+        <tr>
+            <td>Blood Group: @Model.BloodGroup</td>
+        </tr>
+        
+        <tr>
+            <td>Picture: @Model.ProfilePic</td>
+        </tr>
+        <tr>
+            <td>Pic Path: @Model.PicturePath</td>
+        </tr>
+    </table>
+    
+    <img src="@Url.Content(Model.PicturePath)" alt="" height="200" width="400"/>
+</div>
+</body>
+</html>
